@@ -50,15 +50,15 @@ function Particle(x, y, radius, color) {
     this.color = color 
     this.radians = Math.random() * Math.PI * 2;
     this.velocity = 0.03;
-    if (innerWidth < 310) {
-        this.distanceFromCenter = randomIntFromRange (40,110);
+    if (innerWidth < 360) {
+        this.distanceFromCenter = randomIntFromRange (30,100);
     }
-    else if (innerWidth < 434){
+    else if (innerWidth < 650){
 
-        this.distanceFromCenter = randomIntFromRange (60,150);
+        this.distanceFromCenter = randomIntFromRange (40,130);
     }
     else{
-        this.distanceFromCenter = randomIntFromRange (60,180);
+        this.distanceFromCenter = randomIntFromRange (60,190);
     }
     
     // this.lastMouse = {x: x, y: y};
@@ -98,7 +98,7 @@ let particles;
 function init() {
     particles = [];
 
-    for (let i = 0; i < 37; i++) {
+    for (let i = 0; i < 35; i++) {
         const radius = (Math.random() * 2) + 1;
         particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
     }
@@ -118,8 +118,6 @@ function animate() {
 init();
 animate();
 
-
-console.log("fucker");
 
 
 

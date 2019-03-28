@@ -1,6 +1,6 @@
 // import utils from './utils'
 
-const canvas = document.querySelector('canvas')
+const canvas = document.querySelector('canvasteq')
 const c = canvas.getContext('2d')
 
 canvas.width = innerWidth - 30;
@@ -58,14 +58,14 @@ function Particled(x, y, radius, color) {
     
     
      if (innerWidth < 310) {
-        this.distanceFromCenter = randomIntFromRange (50,100);
+        this.distanceFromCenter = randomIntFromRange (40,120);
     }
     else if (innerWidth < 434){
 
-        this.distanceFromCenter = randomIntFromRange (70,140);
+        this.distanceFromCenter = randomIntFromRange (50,150);
     }
     else{
-        this.distanceFromCenter = randomIntFromRange (85,170);
+        this.distanceFromCenter = randomIntFromRange (60,180);
     }
 
 

@@ -1,5 +1,6 @@
 body{
   background: #000;
+
 }
 
 
@@ -26,12 +27,13 @@ body{
 /*  display: none;*/
 }
 .logo{
-  position: fixed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   width: 100px;
   height: 80px;
   background:transparent;
-  margin-left: 45.3%;
-  margin-top: 20%;
 
 }
 #logo{
@@ -74,14 +76,14 @@ overflow: hidden;
   text-align: center;
     letter-spacing: 3px;
     padding-top: -5px;
-  font-family: century gothic;
+  font-family: rockwell;
 }
 .agency{
   color: #fff;
   margin-top: -37px;
   text-align: center;
   font-size: 12px;
-  letter-spacing: 1.5px; 
+  letter-spacing: 1px; 
 }
 
 .optimization{
@@ -96,7 +98,7 @@ overflow: hidden;
   margin-right: 4%;
   margin-top:-2.5%;
 }
-.powered{
+#powered{
   width: 45px;
   height: 18px;
   margin-top: 1px;
@@ -112,26 +114,31 @@ overflow: hidden;
   cursor: pointer;
   border-bottom:2px solid #fff;
   border-right:2px solid #fff;
-    transform:skewX(155deg);
+  transform:skewX(155deg);
+ transition: background-color 2s;
 }
 
+#powered:hover{
+background: -moz-linear-gradient(0deg, #000000,#262626, #a6a6a6, #ffffff);
+}
 
 .pull{
+  position: absolute;
+  float: right;
+  top: 50%;
+  right:-2%;
+  transform: translate(2%,-50%);
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  text-align: center;
-  font-size: 2em;
-  margin-top: 13%;
-  color: #fff;
-  z-index: 1;
-  float: right;
-  background:transparent;
-  margin-right: -25px;
-  border:2px solid #fff;
-  z-index: 1;
+  background: #fff;  
 }
 
+#lines{
+  transform: scale(6);
+  margin-left: 35px;
+  margin-top: 6px;
+}
 
 .navbar{
   height: 80px;
@@ -168,19 +175,132 @@ overflow: hidden;
   float: right;
 }
 
-.menu{
-  width: 70px;
-  height: 70px;
+#menu{
+  position: absolute;
+  width: 65px;
+  height: 65px;
   background:transparent;
   border-radius: 50%;
-  margin-left: 1.5%;
-  margin-top: -1%;
-padding-top: 25px;
+  margin-left: 3%;
+  top: 70%;
+  padding-top: 25px;
   color: #fff;
   font-family: berlin sans fb;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
   cursor: pointer;
   box-shadow:-2px 2px 2px #fff;
  
+}
+
+
+@media screen and (max-width: 650px) {
+  #home
+  {
+    width: 100%;
+  }
+ .pull{
+    display:none;
+
+  }
+
+ #menu{
+  margin-left: 5%;
+  top: 70%;
+}
+.optimization{
+  font-size: 14px;
+  margin-right: 4%;
+  margin-top:-8.5%;
+}
+#logo{
+  transform: scale(.6);
+  margin-top: -16%;
+
+}
+#menu{
+  width: 60px;
+  height: 60px;
+   padding-top: 23px;
+    font-size: 12px;
+}
+.okarp{
+  font-size: 2em;
+    letter-spacing: 3px;
+    padding-top: -5px;
+}
+.agency{
+  margin-top: -37px;
+  font-size: 12px;
+  letter-spacing: 1px; 
+}
+
+}
+
+@media screen and (max-width: 360px) {
+
+ #menu{
+  width: 50px;
+  height: 50px;
+  margin-left: 5%;
+  top: 70%;
+}
+
+.name{
+margin-left: -15%;
+margin-top: -5%;
+  background-color: transparent;
+}
+#powered{
+  width: 40px;
+  height: 14px;
+  margin-top: 1px;
+  margin-right: 2%;
+    margin-left: -40px;
+  font-size: 0.8em;
+}
+.optimization{
+  font-size: 11px;
+  margin-right: 1%;
+
+  margin-top:-13.5%;
+}
+#logo{
+  transform: scale(.38);
+  margin-top: -16%;
+
+}
+#menu{
+  width: 55px;
+  height: 55px;
+   padding-top: 23px;
+    font-size: 10px;
+}
+.okarp{
+  font-size: 1.8em;
+    letter-spacing: 2px;
+    padding-top: -9px;
+}
+.agency{
+  margin-top: -35px;
+  font-size: 10px; 
+}
+.copyright{
+  font-size: 0.85em;
+  margin-top: 44px;
+}
+.privacy{
+  margin-right:5%;
+  font-size: 0.82em;
+  margin-top: 45px;
+}
+
+.terms{
+  margin-right:8%;
+  font-size: 0.82em;
+  margin-top: 45px;
+  
+}
+
+
 }

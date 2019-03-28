@@ -3,12 +3,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<title>KymTeq | Glitch </title>
+<title>Okarp</title>
 <link rel="stylesheet" type="text/css" href="media/style.css">
 <link rel="stylesheet" href="media/bootstrap.min.css">
 <link rel="stylesheet" href="media/animate.min.css">
 <link rel="stylesheet" href="media/font-awesome.min.css">
 <link rel="stylesheet" href="media/et-line-font.css">
+<link rel="icon" href="media/logo.svg">
 
 </head>
 <body>
@@ -30,7 +31,7 @@
 
 
 			<div class="optimization">Experience
-				<div class="powered">OFF</div>
+				<div id="powered">OFF</div>
 				
 			</div>
 
@@ -41,7 +42,12 @@
 <div class="container-fluid">
 	<div class="row">
 
-			<div class="pull"></div>
+			<div class="pull">
+				 <object>
+			<embed id="lines" src="media/lines.svg">
+			</object>
+
+			</div>
 				
   	</div>
 
@@ -49,7 +55,7 @@
 
 
 
-<div class="menu">MENU</div>
+<div id="menu">MENU</div>
 
 <nav class="navbar navbar-fixed-bottom">
 
@@ -105,15 +111,28 @@
 <script src="media/canvas.js"></script>
 
 <script>
-	$(window).ready(function(){
+	$(window).load(function(){
 
-		 $(".menu").click(function(){
-      
-      
-      $(".menu").fadeOut(function() {});
+		 $("#menu").click(function(){
+		 	if(("menu").innerHTML = "MENU") {       
+    document.getElementById("menu").innerHTML = "HIDE";
+}    
+    })
 
-     
-      })
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ $("#powered").click(function(){
+		if(("#powered").innerHTML = "OFF") {       
+     $("#logo").delay(200).queue(function() {
+     	$(this).css("display","none").dequeue();
+     })
+   
+    }
+
+
+ })
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     })
 
 </script>
