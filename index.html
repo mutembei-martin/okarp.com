@@ -9,94 +9,89 @@
 <link rel="stylesheet" href="media/animate.min.css">
 <link rel="stylesheet" href="media/font-awesome.min.css">
 <link rel="stylesheet" href="media/et-line-font.css">
-<link rel="icon" href="media/logo.svg">
+<link rel="icon" href="media/logo1.svg">
 
 </head>
 <body>
 
 
+<section id="contact">
+	 
+</section>
 
+<section id="work">
+	 
+</section>
 
-<section id="home">
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="brand col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-			<div class="name">
-				<P class="okarp">Okarp</P></br><P class="agency">Digital Agency</P>
-				
-
-			</div>
-
-
-			<div class="optimization">Experience
-				<div id="powered">OFF</div>
-				
-			</div>
-
-		</div>	
-	</div>	
-</div>	
-
-<div class="container-fluid">
-	<div class="row">
-
-			<div class="pull">
-				 <object>
-			<embed id="lines" src="media/lines.svg">
-			</object>
-
-			</div>
-				
-  	</div>
-
-</div>
-
-
-
-<div id="menu">MENU</div>
-
-<nav class="navbar navbar-fixed-bottom">
-
-
-<div class="copyright">
-	<p>Copyright © okarp | 2019</p>
+<section id="about">
 	
-</div>	
+<div class="abttxt"></div>
 
-
-
-</div>
-
-
-
-<div class="terms">
-	<p>Terms of use</p>
-	
-</div>	
-
-
-
-<div class="privacy">
-	<p>Privacy</p>
-	
-</div>	
-
-
-</nav>
 </section>
 
 
 
-<section id ="come">
-	<div class="logo">
-		 <object>
-			<embed id="logo" src="media/logo.svg">
+<section id="home">
+	 
+	 <div class="test">
+	 	
+			<object>
+			<embed id="logo1" src="media/logo.svg">	
 			</object>
-	</div>		
-</section>	
 
+	 </div>
+
+	 <div class="pull">
+
+	 	<div></div>
+	 	<div></div>
+	 	<div></div>
+
+	 </div>
+
+
+<div class="container-fluid topset">
+	<div class="row">
+		<div class="brand">
+
+			<div class="name">
+				<P class="okarp">Okarp</P></br><P class="agency">Digital Agency</P>
+				
+			</div>
+
+		</div>
+
+		<div class="optimization">Experience
+			<div id="powered">ON</div>
+		</div>	
+	</div>	
+</div>	
+
+<div class="menuu">
+	<div id="menu">MENU</div>
+	<div class="menu1">ABOUT</div>
+	<div class="menu2">WORK</div>
+	<div class="menu3">CONTACT</div>
+</div> 
+
+<div class="navBottom">
+	<div class="copyright">
+	<p>Copyright © okarp | 2019</p>
+	</div>	
+
+	<div class="terms">
+	<p>Terms of use</p>
+	
+	</div>	
+
+	<div class="privacy">
+	<p>Privacy</p>
+	
+	</div>	
+
+</div>
+
+</section>
 
 <section id="teq">
 	 <canvas id="canvasteq"></canvas>
@@ -104,41 +99,193 @@
 
 
 
-
-
 <script src="media/jquery.js"></script>
 <script src="media/bootstrap.min.js"></script>
 <script src="media/canvas.js"></script>
 
-<script>
-	$(window).load(function(){
 
-		 $("#menu").click(function(){
-		 	if(("menu").innerHTML = "MENU") {       
-    document.getElementById("menu").innerHTML = "HIDE";
-}    
+<script type="text/javascript">
+		
+
+	const slider =document.getElementById("home");
+	let isDown = false;
+	let startX;
+	let scrollLeft;
+	var navChanger = document.getElementById("menu");
+	var powerChanger = document.getElementById("powered");
+	var text = ["OFF", "ON"];
+	var txt = ["HIDE","MENU"];
+	var counter = 0;
+	var hide = "HIDE";
+	var men = "MENU";
+
+
+
+
+		
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	
+
+
+
+
+$(document).ready(function(){
+
+		// $("#home").click(function(){
+			$("#teq").delay(6600).fadeIn();
+			$(".abttxt").delay(7000).fadeIn();
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		$("#powered").click(function(){
+
+			if (powerChanger.innerHTML = "ON") {
+
+	slider.addEventListener('mousedown', (e) => {
+	isDown = true;
+	startX = e.pageX - slider.offsetLeft;
+	scrollLeft = slider.scrollLeft;
+	// console.log(startX)
+
+})
+slider.addEventListener('mouseleave', () => {
+	isDown = false;
+})
+slider.addEventListener('mouseup', (e) => {
+	isDown = false;
+	// lastX = e.pageX - slider.offsetLeft;
+	// console.log(lastX)
+})
+slider.addEventListener('mousemove', (e) => {
+	if(!isDown) return;//stop the fn from running
+	e.preventDefault(); 
+	let x = e.pageX;
+	const walk= x - startX;
+	// let w = innerWidth - walk;
+	let end = innerWidth;
+	let scrolled = (end - walk) - end;
+
+
+	if (scrolled < (0.98 * innerWidth) && scrolled > (0.055 * innerWidth)) {
+
+		$('#home').css({right:scrolled + (0.004 * innerWidth)});
+		$('#teq').css({right:scrolled + (0.004 * innerWidth)});
+	}
+	else if(scrolled <innerWidth && scrolled > innerWidth){
+
+		$('#home').css({right:scrolled + (0.00001 * innerWidth)});
+		$('#teq').css({right:scrolled + (0.00001 * innerWidth)});
+
+	}
+
+	// scrollLeft = scrolled;
+	
+
+	// console.log(x);
+	console.log(scrolled);
+})
+
+	}
+
+  })
+
+
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		$("#menu").click(function(){
+		 	if (counter >= txt.length) {
+		 		counter = 0;
+		 	}
+
+		 	navChanger.innerHTML = txt[counter];
+		 	counter ++; 
+
+		 	if(counter == 1){
+		 	
+		 	$(".menu1").fadeIn().animate({top:"20%"});
+			$(".menu2").fadeIn().animate({left:"80%"});
+			$(".menu3").fadeIn().animate({top:"80%"});
+
+		 	} 
+		 	else{
+
+		 	$(".menu1").animate({top:"50%"}).fadeOut();
+			$(".menu2").animate({left:"20%"}).fadeOut();
+			$(".menu3").animate({top:"50%"}).fadeOut();
+
+		 	}
+		 	
     })
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- $("#powered").click(function(){
-		if(("#powered").innerHTML = "OFF") {       
-     $("#logo").delay(200).queue(function() {
-     	$(this).css("display","none").dequeue();
-     })
-   
-    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	
+			// $("#menu").click(function(){
+
+			// if(txt == "HIDE"){
+		 	
+		 // 	$(".menu1").fadeIn().animate({top:"20%"});
+			// $(".menu2").fadeIn().animate({left:"80%"});
+			// $(".menu3").fadeIn().animate({top:"80%"});
+
+		 // 	}
+		 // 	else if(counter== 1){
+
+		 // 	$(".menu1").animate({top:"50%"}).fadeOut();
+			// $(".menu2").animate({left:"20%"}).fadeOut();
+			// $(".menu3").animate({top:"50%"}).fadeOut();
+
+		 // 	}else{
+
+		 // 	$(".menu1").animate({top:"50%"}).fadeOut();
+			// $(".menu2").animate({left:"20%"}).fadeOut();
+			// $(".menu3").animate({top:"50%"}).fadeOut();
+
+		 // 	}
+
+			// })
+
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		$("#powered").click(function(){
+		if (counter >= text.length) {
+		 		counter = 0;
+		 	}
+
+		 	powerChanger.innerHTML = text[counter];
+		 	counter ++;  
 
  })
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    })
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		$("#powered").click(function(){
+
+		 	if (counter == 0) {
+        powerChanger.style.background = "-moz-linear-gradient(0deg, #000000,#262626, #a6a6a6, #ffffff)";
+      }
+      else if(counter == 1){
+        powerChanger.style.background = "transparent";
+      }
+      else{
+      	powerChanger.style.background = "-moz-linear-gradient(0deg, #000000,#262626, #a6a6a6, #ffffff)";
+      }
+
+ })
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	})
 
 </script>
-
-
-
 
 
 </body>
