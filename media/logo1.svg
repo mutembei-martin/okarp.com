@@ -3,20 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:10;}
 
-	.st1a{fill:none;stroke:#ffffff;stroke-width:2;stroke-miterlimit:10;}
-	.st1a{stroke-dasharray: 500; stroke-dashoffset:0; animation:dash 12s linear forwards; animation-delay: 4.5s;animation-iteration-count: infinite;}
-	.st1b{fill:none;stroke:#0fffff;stroke-width:2;stroke-miterlimit:10;}
-	.st1b{stroke-dasharray: 500; stroke-dashoffset:0; animation:dasha 12s linear forwards;animation-iteration-count: infinite;}
-	.st2{fill:none;stroke:#ffffff;stroke-miterlimit:10;}
-	.st3a{fill:none;stroke:#00ff00;stroke-width:3;stroke-miterlimit:10;}
-	.st3a{stroke-dasharray: 500; stroke-dashoffset:0; animation:dashb 10s linear forwards;animation-delay: 4.5s;animation-iteration-count: infinite;}
-	.st3b{fill:none;stroke:#0fffff;stroke-width:3;stroke-miterlimit:10;}
-	.st3b{stroke-dasharray: 500; stroke-dashoffset:0; animation:dashc 12s linear forwards;animation-iteration-count: infinite;}
-	.st3c{fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;}
-	.st3c{stroke-dasharray: 500; stroke-dashoffset:0; animation:dashd 12s linear forwards;animation-delay: 4.5s;animation-iteration-count: infinite;}
-	.st4{fill:#ffffff;}
+	.st1a{fill:none;stroke:#000;stroke-width:2;stroke-miterlimit:10;}
+	.st1b{fill:none;stroke:#000;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000;stroke-miterlimit:10;}
+	.st3a{fill:none;stroke:#000;stroke-width:3;stroke-miterlimit:10;}
+	.st3b{fill:none;stroke:#000;stroke-width:3;stroke-miterlimit:10;}
+	.st3c{fill:none;stroke:#000;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#000;}
 
 	.st5{font-family:'CopperplateGothic-Bold';}
 
