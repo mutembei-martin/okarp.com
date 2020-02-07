@@ -3,15 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#fff;stroke-width:4;stroke-miterlimit:10;}
 
-	.st1a{fill:none;stroke:#000;stroke-width:2;stroke-miterlimit:10;}
-	.st1b{fill:none;stroke:#000;stroke-width:2;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#000;stroke-miterlimit:10;}
-	.st3a{fill:none;stroke:#000;stroke-width:3;stroke-miterlimit:10;}
-	.st3b{fill:none;stroke:#000;stroke-width:3;stroke-miterlimit:10;}
-	.st3c{fill:none;stroke:#000;stroke-width:3;stroke-miterlimit:10;}
-	.st4{fill:#000;}
+	.st1a{fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;}
+	.st1b{fill:none;stroke:#fff;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#fff;stroke-miterlimit:10;}
+	.st3a{fill:none;stroke:#fff;stroke-width:3;stroke-miterlimit:10;}
+	.st3b{fill:none;stroke:#fff;stroke-width:3;stroke-miterlimit:10;}
+	.st3c{fill:none;stroke:#fff;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#fff;}
 
 	.st5{font-family:'CopperplateGothic-Bold';}
 
