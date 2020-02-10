@@ -3,7 +3,7 @@
 const canvas = document.getElementById('canvasteq')
 const c = canvas.getContext('2d')
 
-if (innerWidth > 500) {
+if (innerWidth > 540) {
 canvas.width = (innerWidth) - 30;
 canvas.height = innerHeight-30;
 }else{
@@ -12,8 +12,8 @@ canvas.height = innerHeight-30;
 }
 
 const mouse = {
-    x: (innerWidth - 17) / 2,
-    y: (innerHeight - 17) / 2
+    x: (innerWidth - 30) / 2,
+    y: (innerHeight - 30) / 2
 }
 
 const colors = ['#0ff', '#fff', '#00ff00', '#009999'];
@@ -25,7 +25,7 @@ addEventListener('mousemove', event => {
 });
 
 addEventListener('resize', () => {
-    if (innerWidth > 500) {
+    if (innerWidth > 540) {
 canvas.width = (innerWidth) - 30;
 canvas.height = innerHeight-30;
 }else{

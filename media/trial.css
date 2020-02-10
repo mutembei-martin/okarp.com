@@ -1,0 +1,233 @@
+.menu{
+  position: absolute;
+  width: 50%;
+  height: 40px;
+  background: transparent;
+  text-align: center;
+  color: #cccccc;
+  font-weight: bold;
+  float:left;
+  margin-left: 50%; 
+}
+.mnuabout, .mnuservices, .mnuprojects, .mnucontacts{
+ width: 20%;
+ height:25px;
+ margin-left: 4%;
+ font-size: 1.1em;
+ float: left;
+
+}
+.color{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -10px;
+  height: 15px;
+  background: #000;
+}
+.color div{
+  width: 14%;
+  height: 7px;
+  margin-left: 5%;
+  background: #000;
+  float: left;
+  border-bottom: 4px dotted #fff;
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.mnuabout, .mnuservices, .mnuprojects, .mnucontacts{
+  font-size: 0.95em;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+@media screen and (max-width: 650px) {
+
+.test{
+  width: 48px;
+  height: 48px;
+}
+
+@-webkit-keyframes grow{
+  0%{
+    width:50px;
+    height:50px;
+    
+  }
+  50%{
+   width:60px;
+   height: 60px;
+    
+  }
+  100%{
+    width:50px;
+    height: 50px;
+    
+  }
+  }
+
+  .middlebar{
+  height: 25px;
+}
+.midprojo,.midabt{
+  line-height: 25px;
+   font-size: 0.9em;
+}
+
+.copyright{
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.mnuabout, .mnuservices, .mnuprojects, .mnucontacts{
+  font-size: 0.8em;
+}
+
+}
+
+
+@media screen and (max-width: 530px) {
+
+  #home, #work, #about,#contact{
+  border:none;
+   width: 100%;
+   overflow: hidden;
+}
+#teq{
+   border:none;
+   overflow: hidden;
+}
+.test{
+  position: absolute;
+  top: 49.5%;
+  left:50.5%;
+}
+  .topset{
+  height: 60px;
+  margin-top: 20px;
+
+}
+
+.optimization{
+  font-size: 12px;
+  margin-right: 3%;
+  margin-top:-60px;
+}
+
+#powered{
+  width: 42px;
+  height: 16px;
+  margin-right: -10%;
+
+}
+
+.okarp{
+  font-size: 2em;
+/*  letter-spacing: 2.5px;
+  padding-top: -5px;*/
+}
+.agency{
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+
+.aboutholder{
+  width: 150px;
+  height: 30px;
+
+}
+.abt{
+  font-size: 3em;
+}
+.shade{
+  height: 20px; 
+  margin-top:-20px; 
+}
+.abtxt{
+  width: 100%;
+  margin-left: 0;
+  height: 80vh;
+  margin-top: 15px;
+}
+
+#abtscroll{
+  width: 100%;
+  margin-left: 0;
+  height: 250vh;
+  border-bottom: 10px solid #ff0000;
+  border-top: 10px solid #ff0000;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+
+}
+.navBottom{
+  border-bottom: 0;
+}
+.copyright{
+  display: none;
+}
+.menu{
+  width: 100%;
+  margin-left: 0;
+}
+
+}
+
+
+
+.abttxt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border:2px solid #fff;
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .middlebar{
+  display: none;
+
+}
+
+.copyright{
+   display: none;
+}
+  .menu{
+    /*display: none;*/
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

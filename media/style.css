@@ -377,7 +377,7 @@ display: none;
   background:#000;
   background-position: fill;
   position: absolute;
-  width: 99%;
+  width: 100%;
   height: 100%;
   border-left:15px solid #fff;
   border-top:15px solid #fff;
@@ -605,16 +605,26 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
   color: #cccccc;
   font-weight: bold;
   float:left;
-  margin-left: 52%; 
+  margin-left: 50%; 
 }
 .mnuabout, .mnuservices, .mnuprojects, .mnucontacts{
  width: 20%;
  height:25px;
  margin-left: 4%;
+ font-size: 1.1em;
  float: left;
+ transition: 0.8s;
 }
+.mnuabout:hover , .mnuservices:hover, .mnuprojects:hover, .mnucontacts:hover{
+border-right: 2px solid #fff;
+border-left: 2px solid #fff;
+color: #fff;
+cursor: pointer;
+text-shadow: 0 0 5px #fff;
+
+  }
 .color{
-  margin-top: -5px;
+  margin-top: -7px;
   width: 80%;
   margin-left: 10%;
   height: 15px;
@@ -623,7 +633,7 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
 .color div{
   width: 12%;
   height: 7px;
-  margin-left: 8%;
+  margin-left: 7%;
   background: #000;
   float: left;
   border-bottom: 4px dotted #fff;
@@ -646,6 +656,14 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
     
   }
   }
+
+
+@media screen and (max-width: 870px) {
+  .color div{
+  border-bottom: 3.7px dotted #fff;
+}
+}
+
 
 @media screen and (max-width: 800px) {
 
@@ -703,21 +721,7 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
   letter-spacing: 1px; 
 }
 
-.menuu{
-  width: 130px;
-  height: 200px;
-  margin-left: 5%;
-  margin-top:35vh;
-}
 
-#menu, .menu1,.menu2,.menu3{
-  width: 60px;
-  height: 60px;
-  top: 50%;
-    text-align: center;
-  font-size: 0.8em;
-  padding-top:23px;
-}
 
 .abtmenuu{
   width: 130px;
@@ -763,13 +767,26 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
   border-right: 2px solid #fff;
 
 }
-
-.privacy{
-  margin-top: 15px;
+.mnuabout, .mnuservices, .mnuprojects, .mnucontacts{
+  font-size: 0.95em;
+  margin-top: 5px;
 }
 
-.terms{
-   margin-top: 15px;
+.mnuabout:hover , .mnuservices:hover, .mnuprojects:hover, .mnucontacts:hover{
+border-left: 1px solid #fff;
+border-right: 1px solid #fff; 
+text-shadow: 0 0 4px #fff;
+
+  }
+.copyright{
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.color{
+  margin-top: -9px;
+  }
+  .color div{
+  height: 5px;
 }
 
 }
@@ -809,14 +826,28 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
 }
 
 .copyright{
-  font-size: 0.9em;
+  font-size: 0.85em;
   margin-top: 5px;
 }
+.mnuabout, .mnuservices, .mnuprojects, .mnucontacts{
+  font-size: 0.85em;
+}
+.mnuabout:hover , .mnuservices:hover, .mnuprojects:hover, .mnucontacts:hover{
+  text-shadow: 0 0 3px #fff;
+
+  }
+.color{
+  margin-top: -7px;
+}
+
+.color div{
+  border-bottom:none;
+}
 
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
 
   #home, #work, #about,#contact{
   border:none;
@@ -897,6 +928,18 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
 .copyright{
   display: none;
 }
+.middlebar{
+  display: none;
+
+}
+.menu{
+  width: 100%;
+  margin-left: 0;
+  margin-top: 7px;
+}
+.color{
+  height: 5px;
+}
 
 }
 
@@ -915,15 +958,11 @@ background: -moz-linear-gradient(0deg,#a6a6a6,#262626,#000000, #000000);  float:
 }
 
 @media screen and (max-width: 450px) {
-  .middlebar{
-  display: none;
-
-}
-
+  
 .copyright{
    display: none;
 }
   .menu{
-    display: none;
+    /*display: none;*/
   }
 }
